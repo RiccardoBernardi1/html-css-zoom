@@ -13,6 +13,7 @@ header {
     background-color: aqua;
 }
 main {
+    padding-top: 40px;
     height: calc(100% - 120px);
     background-color: blueviolet;
     width: 90%;
@@ -21,5 +22,94 @@ main {
 }
 footer {
     height: 90px;
-    background-color: bisque;
+    background-color:blue;
+}
+/* COMMON */
+.list-inline {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+}
+.list-inline  li {
+    margin: 0 5px 0 0;
+}
+.list-inlin li *{
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+/* TIPOGRAPHY */
+*{
+    color: white;
+}
+/* HEADER */
+header{
+    text-align: right;
+    padding:2px 5px;
+}
+.speaker-view,.wide-screen{
+    background-color: #4A4A4A;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding:5px;
+}
+.speaker-view,.wide-screen:hover{
+    cursor: pointer;
+}
+/* MAIN */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    width: calc(100%/7 - 6px);
+    margin:3px;   
+}
+.user-video{
+    height: 150px;
+    background-color: red;
+    display: block;
+    position: relative;
+}
+.caption{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+/* FOOTER */
+footer{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    position: relative;
+    background-color: #000;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+}
+.end-btn,.btn>*,.btn:hover{
+    cursor: pointer;
+}
+.audio-video,.end-btn{
+    width: 10%;
+}
+.btn>*{
+    background-color: transparent;
+}
+.general{
+    width: 80%;
+    justify-content: center;
+}
+.general>*{
+    padding:5px;
+}
+.end-btn{
+    color: red;
+    background-color: rgba(0, 0, 0, 0.5);  
+    align-self: stretch; 
 }
