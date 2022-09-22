@@ -8,22 +8,6 @@ body {
     background-color: #000;
     height: 100vh;
 }
-header {
-    height: 30px;
-    background-color: aqua;
-}
-main {
-    padding-top: 40px;
-    height: calc(100% - 120px);
-    background-color: blueviolet;
-    width: 90%;
-    margin: auto;
-    overflow-y: auto;
-}
-footer {
-    height: 90px;
-    background-color:blue;
-}
 /* COMMON */
 .list-inline {
     list-style: none;
@@ -45,6 +29,7 @@ footer {
 }
 /* HEADER */
 header{
+    height: 30px;
     text-align: right;
     padding:2px 5px;
 }
@@ -59,6 +44,14 @@ header{
     cursor: pointer;
 }
 /* MAIN */
+main {
+    padding-top: 40px;
+    height: calc(100% - 120px);
+    background-color: #000;
+    width: 90%;
+    margin: auto;
+    overflow-y: auto;
+}
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -68,8 +61,6 @@ header{
     margin:3px;   
 }
 .user-video{
-    height: 150px;
-    background-color: red;
     display: block;
     position: relative;
 }
@@ -80,10 +71,15 @@ header{
     left: 0;
     bottom: 0;
 }
+.user-image{
+    width: 100%;
+}
 /* FOOTER */
 footer{
     display: flex;
     align-items: center;
+    height: 90px;
+    background-color:#222222;
 }
 .btn{
     position: relative;
