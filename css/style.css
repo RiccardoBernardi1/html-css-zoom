@@ -18,10 +18,8 @@ body {
 .list-inline  li {
     margin: 0 5px 0 0;
 }
-.list-inlin li *{
-    text-decoration: none;
-    color: inherit;
-    font-family: inherit;
+.end-btn,.list-inline *{
+    border: none;
 }
 /* TIPOGRAPHY */
 *{
@@ -33,6 +31,7 @@ header{
     text-align: right;
     padding:2px 5px;
 }
+/* bottoni header */
 .speaker-view,.wide-screen{
     background-color: #4A4A4A;
     border: none;
@@ -52,6 +51,7 @@ main {
     margin: auto;
     overflow-y: auto;
 }
+/* righe e colonne */
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -60,6 +60,7 @@ main {
     width: calc(100%/7 - 6px);
     margin:3px;   
 }
+/* immagine e caption */
 .user-video{
     display: block;
     position: relative;
@@ -81,22 +82,27 @@ footer{
     height: 90px;
     background-color:#222222;
 }
+/* bottoni footer */
 .btn{
-    position: relative;
-    background-color: #000;
+    background-color: transparent;
     text-align: center;
     font-size: 30px;
-    padding: 5px;
+    padding: 5px; 
+}
+footer .btn i{
+    padding-bottom: 10px;
 }
 .end-btn,.btn>*,.btn:hover{
     cursor: pointer;
 }
-.audio-video,.end-btn{
-    width: 10%;
-}
 .btn>*{
     background-color: transparent;
 }
+/* lista bottoni 1 */
+.audio-video,.end-btn{
+    width: 10%;
+}
+/* lista bottoni 2 */
 .general{
     width: 80%;
     justify-content: center;
@@ -104,8 +110,19 @@ footer{
 .general>*{
     padding:5px;
 }
+/* ultimo bottone */
 .end-btn{
     color: red;
-    background-color: rgba(0, 0, 0, 0.5);  
+    background-color: #4A4A4A;  
     align-self: stretch; 
+}
+/* icone */
+.arrow{
+    padding-left: 5px;
+}
+.arrow-reverse{
+    padding-right: 10px ;
+}
+.fa-share-square{
+    color: green;
 }
